@@ -28,9 +28,11 @@ namespace EngagementBreeze.Commands
             {
                 int thresholdVal = ValidateThresholdValue(inputValues[2]);
                 ApplicationSettings.GetInstance().UpdateSetting(setting, thresholdVal.ToString());
+                Console.WriteLine($"\t{setting} updated");
                 return;
             }
             ApplicationSettings.GetInstance().UpdateSetting(setting, inputValues[2]);
+            Console.WriteLine($"\t{setting} updated");
         }
 
         public override string GetDefinition() => "sets the setting for the provided code to the entered value";

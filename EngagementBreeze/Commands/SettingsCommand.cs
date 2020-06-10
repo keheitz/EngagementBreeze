@@ -10,7 +10,7 @@ namespace EngagementBreeze.Commands
         {
             foreach (var setting in ApplicationSettings.GetInstance().GetListOfSettingsAndValues())
             {
-                Console.WriteLine(setting);
+                Console.WriteLine("\t" + setting);
             }
         }
 

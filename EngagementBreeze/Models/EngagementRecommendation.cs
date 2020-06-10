@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace EngagementBreeze.Models
 {
@@ -17,7 +18,7 @@ namespace EngagementBreeze.Models
         /// <param name="outlook">Accepts input parameter of the weather outlook</param>
         public EngagementRecommendation(WeatherOutlook outlook)
         {
-            foreach(var day in outlook.forecasts)
+            foreach(var day in outlook.forecasts.Take(5))
             {
                 ContactMethod contactMethod = new ContactMethod();
                 if(day.AverageTemperature < 55 || day.Rainy)
@@ -38,11 +39,11 @@ namespace EngagementBreeze.Models
 
         public void WritePlan()
         {
-            Console.WriteLine("Recommendations based on current weather forecast:");
+            Console.WriteLine($"Recommendations for {ApplicationSettings.GetInstance().GetSettingValue(ConfigurableSettings.City)} based on current forecast:");
             Console.WriteLine("--------------------------------------------------");
             foreach (var recommendation in RecommendedContactForDate)
             {
-                Console.WriteLine($"{recommendation.Key.ToString("d")}\t{recommendation.Value}");
+                Console.WriteLine($"\t{recommendation.Key.ToString("d")}\t{recommendation.Value}");
             }
             Console.WriteLine("--------------------------------------------------");
         }

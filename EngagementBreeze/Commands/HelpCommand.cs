@@ -8,7 +8,7 @@ namespace EngagementBreeze.Commands
         {
             foreach(String helpInfo in CommandFactory.GetCommandInformation())
             {
-                Console.WriteLine(helpInfo);
+                Console.WriteLine("\t" + helpInfo);
             }
         }
 
