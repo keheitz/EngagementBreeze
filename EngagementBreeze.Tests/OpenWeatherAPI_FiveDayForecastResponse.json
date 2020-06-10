@@ -1,0 +1,152 @@
+{
+  "cod": "200",
+  "message": 0,
+  "cnt": 4,
+  "list": [
+    {
+      "dt": 1592103600,
+      "main": {
+        "temp": 60.00,
+        "feels_like": 60.00,
+        "temp_min": 60.00,
+        "temp_max": 60.00,
+        "pressure": 1023,
+        "sea_level": 1023,
+        "grnd_level": 994,
+        "humidity": 72,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 801,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "02n"
+        }
+      ],
+      "clouds": {
+        "all": 93
+      },
+      "wind": {
+        "speed": 11.48,
+        "deg": 134
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2020-06-14 03:00:00"
+    },
+    {
+      "dt": 1592114400,
+      "main": {
+        "temp": 60.00,
+        "feels_like": 60.00,
+        "temp_min": 60.00,
+        "temp_max": 60.00,
+        "pressure": 1023,
+        "sea_level": 1023,
+        "grnd_level": 994,
+        "humidity": 77,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "all": 56
+      },
+      "wind": {
+        "speed": 11.43,
+        "deg": 144
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2020-06-14 06:00:00"
+    },
+    {
+      "dt": 1592125200,
+      "main": {
+        "temp": 70.00,
+        "feels_like": 70.00,
+        "temp_min": 70.00,
+        "temp_max": 70.00,
+        "pressure": 1023,
+        "sea_level": 1023,
+        "grnd_level": 994,
+        "humidity": 78,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "03n"
+        }
+      ],
+      "clouds": {
+        "all": 89
+      },
+      "wind": {
+        "speed": 11.92,
+        "deg": 147
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2020-06-14 09:00:00"
+    },
+    {
+      "dt": 1592136000,
+      "main": {
+        "temp": 50,
+        "feels_like": 50.00,
+        "temp_min": 50,
+        "temp_max": 50,
+        "pressure": 1023,
+        "sea_level": 1023,
+        "grnd_level": 994,
+        "humidity": 72,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Rain",
+          "description": "heavy rain",
+          "icon": "03d"
+        }
+      ],
+      "clouds": {
+        "all": 99
+      },
+      "wind": {
+        "speed": 12.55,
+        "deg": 149
+      },
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2020-06-14 12:00:00"
+    }
+  ],
+  "city": {
+    "id": 5037649,
+    "name": "Minneapolis",
+    "coord": {
+      "lat": 44.98,
+      "lon": -93.2638
+    },
+    "country": "US",
+    "population": 382578,
+    "timezone": -18000,
+    "sunrise": 1591698392,
+    "sunset": 1591754313
+  }
+}
